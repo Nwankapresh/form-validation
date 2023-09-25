@@ -1,0 +1,1 @@
+A simple sample form validated with client side javascript 
