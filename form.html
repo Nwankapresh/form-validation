@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Validated Form</title>
+	<link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+	<h1>Pimp My Shoes Contest Entry Form</h1>
+	<p>Want to trade in your old sneakers for a custom pair of forcefields?<br>
+		Make a case for why your shoes have got to go and you may be one of ten lucky winners.</p>
+
+	<h2>Contest Entry Information</h2>
+
+	<div class="container">
+		<form action="http://learningwebdesign.com/contest.php" method="post" id="my-form">
+
+			<div class="input-group">
+				<label for="form-name">Name</label>
+				<input type="name" name="username" placeholder="Enter full name" id="form-name" onkeyup="validateName()">
+				<span id="name-error"> </span>
+			</div>
+
+			<div class="input-group">
+				<label for="form-email">Email</label>
+				<input type="email" name="emailaddress"  placeholder="Enter your email" id="form-email" onkeyup="validateEmail()">
+				<span id="email-error"> </span>
+			</div>
+
+			<div class="input-group">
+				<label for="form-phone">Phone</label>
+				<input type="phone" name="telephone" placeholder="Phone number"  id="form-phone" onkeyup="validatePhone()">
+				<span id="phone-error"> </span>
+			</div>
+
+			<div class="input-group">
+				<label for="form-message">My Shoes Are So Old</label> 
+				<textarea name="message" placeholder="300 characters long" id="form-message" onkeyup="validateMessage()"> </textarea>
+				<span id="message-error"> </span>
+			</div>
+
+			<div class="input-group">
+				<h3>Design your Custom Forcefields:</h3>
+				<h3 class="design"> Custom Shoe Design </h3>
+				<h3 class="work"> Color (choose one): </h3>
+				<ul>
+					<li ><input type="radio" name="color" value="Red" class="radio"> Red </li>
+					<li><input type="radio" name="color" value="Blue" class="radio"> Blue </li>
+					<li><input type="radio" name="color" value="Black" class="radio"> Black </li>
+					<li><input type="radio" name="color" value="silver" class="radio"> Silver  </li>
+				</ul>
+			</div>
+
+			<div class="input-group">
+				<h3 class="design"> Size </h3>
+				<label class="emphasize"> (reflect standard men's sizing): </label>
+				<select name="size" class="option">
+					<option value="5" class="option">5</option>
+					<option value="6" class="option">6</option>
+					<option value="7" class="option">7</option>
+					<option value="8" class="option">8</option>
+					<option value="9" class="option">9</option>
+					<option value="10" class="option">10</option>
+					<option value="11" class="option">11</option>
+					<option value="12" class="option">12</option>
+				</select>
+			</div>
+
+			<div class="input-group">
+				<h3 class="design"> Features (choose as many as you want): </h3>
+				<ul class="check-box">
+					<li><input type="checkbox" name="features" value="Sparkley laces" class="checkbox"> Sparkley laces </li>
+					<li><input type="checkbox" name="Features" value="Metallic logo"checked class="checkbox"> Metallic logo </li>
+					<li><input type="checkbox" name="Features" value="Light-up heels" class="checkbox"> Light-up heels </li>
+					<li><input type="checkbox" name="Features" value="MP3-enabled" class="checkbox"> Mp3-enabled </li>
+				</ul>
+			</div>
+
+			<div class="input-group">
+				<input type="submit" value="pimp my shoes!" id="form-submit" onclick="validateForm()">
+				<input type="submit" value="reset form!" id="form-submit">
+				<span id="submit-error">  </span>
+			</div>
+		</form>
+	</div>
+	<script src="form validate.js"></script>
+</body>
+</html>
+

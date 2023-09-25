@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #000000;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+.container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #0000ff;
+    padding-bottom: 15px;
+}
+
+p{
+    line-height: 1.5em;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 20px;
+
+}
+
+h2{
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #808080;
+}
+
+.input-group{
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 15px;
+
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    color: #808080;
+    padding-bottom: 4px;
+}
+
+#form-name{
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+}
+
+#form-email{
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+}
+
+#form-phone{
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    outline: none;
+}
+
+#form-message{
+    width: 600px;
+    height: 100px;
+    padding: 5px;
+    outline: none;
+}
+
+
+h3{
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #808080;
+}
+
+ .design{
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #808080;
+}
+
+.work{
+    padding-bottom: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #808080;
+}
+
+ul{
+    list-style-type: none;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+li{
+    display: inline-block;
+    padding-right: 10px ;
+}
+
+ .emphasize{
+     display: inline;
+    font-style: italic;
+    font-weight: bold;
+    padding-right: 6px;
+}
+
+.check-box li{
+    display: block;
+    padding-bottom: 5px;
+}
+
+.radio{
+    cursor: pointer;
+}
+
+.option{
+    cursor: pointer;
+}
+
+.checkbox{
+    cursor: pointer;
+}
+
+#form-submit{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+    background: #0000ff;
+    border: 1px solid #0000ff;
+    border-radius: 15px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+#form-submit:hover{
+    text-transform: capitalize;
+}
+
+span{
+    display: block;
+    text-align: center;
+}
+
+#name-error, #email-error, #phone-error, #message-error, #submit-error{
+    color: #ff0000;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#submit-error{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+@media only screen and (max-width:600px){
+   #form-message{
+    width: 300px;
+   }
+
+   #form-submit{
+    display: flex;
+   }
+}
+.input-group #form-submit{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
